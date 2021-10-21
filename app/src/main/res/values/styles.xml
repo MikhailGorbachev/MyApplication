@@ -1,0 +1,258 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blazeOrange</item>
+        <item name="colorPrimaryDark">@color/blazeOrange</item>
+        <item name="colorAccent">@color/blazeOrange</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorSecondary">@color/blazeOrange</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+        <item name="snackbarButtonStyle">
+            @style/Outlined.MaterialComponents.Button.TextButton.Snackbar
+        </item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="@style/Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/white</item>
+        <item name="titleTextAppearance">@style/Text.Bigger</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/dialog_background</item>
+    </style>
+
+    <style name="AppModalTransparentStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="Outlined.MaterialComponents.Button.TextButton.Snackbar" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="strokeColor">@color/white</item>
+        <item name="background">@color/white</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/blazeOrange</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="DialogDragView">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/drag_view_background</item>
+    </style>
+
+    <style name="TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/Text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/corner_radius</item>
+        <item name="elevation">0dp</item>
+        <item name="rippleColor">@color/gallery</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginStart">@dimen/container_padding</item>
+        <item name="android:layout_marginEnd">@dimen/container_padding</item>
+    </style>
+
+    <style name="ThemeOverlay.Button.Orange" parent="ButtonStyle">
+        <item name="colorPrimary">@color/blazeOrange</item>
+    </style>
+
+    <style name="ButtonStyle.Orange">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Button.Orange</item>
+    </style>
+
+    <style name="ButtonStyle.Orange.Outline">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Button.Orange</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.BottomRounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">@dimen/corner_radius</item>
+        <item name="cornerSizeBottomRight">@dimen/corner_radius</item>
+    </style>
+
+    <style name="ButtonStyle.White">
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/blazeOrange</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:textColor">@color/blazeOrange</item>
+    </style>
+
+    <style name="Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">@dimen/container_padding_bottom</item>
+    </style>
+
+    <style name="ContainerMargin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/container_padding</item>
+        <item name="android:layout_marginEnd">@dimen/container_padding</item>
+    </style>
+
+    <style name="LandingTitle" parent="ContainerMargin">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">@dimen/landing_title_margin_top</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingStart">@dimen/landing_title_padding</item>
+        <item name="android:paddingEnd">@dimen/landing_title_padding</item>
+        <item name="android:paddingTop">@dimen/landing_title_padding_top</item>
+        <item name="android:paddingBottom">@dimen/landing_title_padding_top</item>
+        <item name="android:textColor">@color/blazeOrange</item>
+        <item name="android:textSize">@dimen/landing_title_font_size</item>
+    </style>
+
+    <style name="LandingDesc" parent="ContainerMargin">
+        <item name="android:layout_marginTop">@dimen/container_padding</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/landing_desc_font_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PhoneTitle" parent="ContainerMargin">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/container_padding</item>
+        <item name="android:textSize">@dimen/landing_title_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="PhoneDesc" parent="ContainerMargin">
+        <item name="android:layout_marginTop">@dimen/phone_desc_margin_top</item>
+        <item name="android:textSize">@dimen/phone_desc_font_size</item>
+    </style>
+
+    <style name="FakeSms" parent="ContainerMargin">
+        <item name="android:layout_marginTop">@dimen/phone_desc_margin_top</item>
+        <item name="android:layout_height">@dimen/phone_sms_height</item>
+    </style>
+
+    <style name="PhoneNumber" parent="ContainerMargin">
+        <item name="android:layout_marginTop">@dimen/phone_number_margin_top</item>
+        <item name="android:textSize">@dimen/phone_number_font_size</item>
+        <item name="android:textAppearance">@style/Text.Big.Bold</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
+    <style name="Agreement" parent="ContainerMargin">
+        <item name="android:layout_marginTop">@dimen/agreement_margin_top</item>
+        <item name="android:textSize">@dimen/text_smaller</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/doveGray</item>
+    </style>
+
+    <style name="ModalTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/container_padding</item>
+        <item name="android:textSize">@dimen/landing_title_font_size</item>
+    </style>
+
+    <style name="AddressEditText" parent="ContainerMargin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:inputType">text</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingTop">@dimen/address_edit_text_padding</item>
+        <item name="android:paddingBottom">@dimen/address_edit_text_padding</item>
+        <item name="android:textSize">@dimen/text_big</item>
+    </style>
+
+    <style name="SearchAddressPanel" parent="ContainerMargin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/address_search_panel_height</item>
+        <item name="android:layout_marginTop">@dimen/address_search_panel_margin_top</item>
+    </style>
+
+    <style name="SearchAddressGrayLine" parent="ContainerMargin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/gray_line_height</item>
+        <item name="android:layout_marginEnd">0dp</item>
+    </style>
+
+    <style name="Text.Smaller">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Smaller.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.Bigger">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Text.Bigger.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Big">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Big.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Giant">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Text.Giant.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <style name="Text">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

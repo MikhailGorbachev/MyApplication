@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flow_nav_graph"
+    app:startDestination="@id/emptyFragment">
+
+    <action
+        android:id="@+id/action_log_out"
+        app:destination="@id/landingFragment"
+        app:popUpTo="@id/landingFragment" />
+
+    <action
+        android:id="@+id/action_open_address"
+        app:destination="@id/addressFlowFragment"
+        app:popUpTo="@id/emptyFragment" />
+
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="androidx.fragment.app.Fragment" />
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="ru.mg.myapplication.auth.LandingFragment">
+        <action
+            android:id="@+id/action_to_auth_flow"
+            app:destination="@id/authFlowFragment" />
+
+        <action
+            android:id="@+id/action_to_address_flow"
+            app:destination="@id/addressFlowFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/authFlowFragment"
+        android:name="ru.mg.myapplication.auth.AuthFlowFragment"
+        android:label="AuthFlowFragment"
+        tools:layout="@layout/fragment_auth_flow" />
+
+    <fragment
+        android:id="@+id/addressFlowFragment"
+        android:name="ru.mg.myapplication.ui.address.AddressFlowFragment"
+        android:label="AddressFlowFragment" />
+
+    <fragment
+        android:id="@+id/mainFlowFragment"
+        android:name="ru.mg.myapplication.ui.mainflow.MainFlowFragment"
+        android:label="MainFlowFragment" />
+
+</navigation>

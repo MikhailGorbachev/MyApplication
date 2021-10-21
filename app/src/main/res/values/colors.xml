@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blazeOrange</color>
+    <color name="colorPrimaryDark">@color/blazeOrange</color>
+    <color name="colorAccent">@color/blazeOrange</color>
+    <color name="blazeOrange">#FF5C00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="default_background">#E5E5E5</color>
+    <color name="lightGallery">#EEEEEE</color>
+    <color name="black">#000000</color>
+    <color name="brown">#993700</color>
+    <color name="darkGray">#909090</color>
+    <color name="doveGray">#6F6F6F</color>
+    <color name="gray">#939393</color>
+    <color name="lightGray">#C1C1C1</color>
+    <color name="alabaster">#F8F8F8</color>
+    <color name="athensGray">#EFEFF0</color>
+    <color name="alto">#D8D8D8</color>
+    <color name="alto_light">#E0E0E0</color>
+    <color name="gallery">#EDEDED</color>
+    <color name="seashell">#F1F1F1</color>
+    <color name="mercury">#E1E1E1</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="skeleton">#D8D8D8</color>
+    <color name="green">#99c835</color>
+    <color name="atlantis">#9DDF31</color>
+    <color name="silver">#C8C8C8</color>
+    <color name="transparent_90">#E6FFFFFF</color>
+    <color name="transparent_20">#33FFFFFF</color>
+    <color name="amaranth">#ee4054</color>
+    <color name="peach">#FFF4EE</color>
+    <color name="violet">#595ad3</color>
+    <color name="blue">#005EEC</color>
+    <color name="boulder">#767676</color>
+    <color name="openings_time">#858585</color>
+    <color name="category_gallery">#EBEBEB</color>
+    <color name="silver_chalice">#A1A1A1</color>
+    <color name="dove_gray">#6A6A6A</color>
+    <color name="error">#EB5757</color>
+
+    <color name="dark_gray">#9F9F9F</color>
+    <color name="out_of_stock">#828282</color>
+    <color name="checkout_hint">#BDBDBD</color>
+</resources>

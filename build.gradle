@@ -1,0 +1,68 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.4.10"
+    ext.nav_version = '2.2.2'
+    ext.dagger_version = '2.27'
+    ext.lifecycle_version = '2.2.0'
+    ext.mapkit_version = '3.5.0'
+    ext.rxjava_version = '2.2.19'
+    ext.rxkotlin_version = '2.4.0'
+    ext.rxandroid_version = '2.1.1'
+    ext.rxpermissions_version = '0.10.2'
+    ext.multidex_version = '2.0.1'
+    ext.material_version = '1.1.0-rc02'
+    ext.retrofit_version = '2.8.1'
+    ext.logging_interceptor_version = '4.6.0'
+    ext.tink_version = '1.3.0'
+    ext.adapter_delegates_version = '4.3.0'
+    ext.mockito_vertion = '3.3.3'
+    ext.mockito_inline_vertion = '2.7.19'
+    ext.shimmer_version = '0.5.0'
+    ext.auth_api_phone_version = '17.5.0'
+    ext.mask_android_version = "6.0.0"
+    ext.tink_version = "1.3.0"
+    ext.location_api_version = '17.1.0'
+    ext.firebase_analytics_version = '17.5.0'
+    ext.firebase_crashlytics_version = '17.2.1'
+    ext.firebase_messaging_version = '21.0.0'
+    ext.room_version = '2.2.5'
+    ext.picasso_version = '2.71828'
+    ext.atv_version = '1.2.9'
+    ext.nav_version = '2.3.0'
+    ext.joda_version = '2.10.6.1'
+    ext.gson_jodatime_serialisers = '1.8.0'
+    ext.swipe_layout_version = '1.2.0'
+    ext.viewpager2_version = '1.0.0'
+    ext.converter_scalars_version = '2.7.0'
+    ext.flexbox_version = '0.3.0'
+    ext.appflyer_version = '6.2.3'
+    ext.installreferrer_version = '2.2'
+    ext.facebook_sdk_version = '9.1.0'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        classpath 'com.google.gms:google-services:4.3.4'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.2.0'
+        classpath 'com.google.firebase:firebase-appdistribution-gradle:2.0.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

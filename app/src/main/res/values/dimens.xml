@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="modal_margin_top">80dp</dimen>
+    <dimen name="modal_payment_type_height">200dp</dimen>
+    <dimen name="modal_address_list_height">300dp</dimen>
+
+    <dimen name="product_cart_panel_button_size">32dp</dimen>
+    <dimen name="product_cart_image_size">90dp</dimen>
+    <dimen name="product_cart_clean_image_size">20dp</dimen>
+
+    <dimen name="category_padding_start">10dp</dimen>
+    <dimen name="category_padding_bottom">8dp</dimen>
+
+    <dimen name="checkout_label_padding">20dp</dimen>
+
+    <dimen name="banner_width">240dp</dimen>
+    <dimen name="banner_height">120dp</dimen>
+    <dimen name="banner_social_size">50dp</dimen>
+
+    <dimen name="banner_list_padding">15dp</dimen>
+
+</resources>
